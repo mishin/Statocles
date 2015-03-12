@@ -102,6 +102,8 @@ ENDHELP
 sub command {
     my ( $self, $name, @argv ) = @_;
 
+    say "Blog->command";
+
     if ( !$argv[0] ) {
         say STDERR "ERROR: Missing command";
         say STDERR eval "qq{$USAGE_INFO}";
